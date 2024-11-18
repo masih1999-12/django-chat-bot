@@ -34,7 +34,6 @@ class User(AbstractUser):
     email = models.EmailField(null=True,blank=True)
     full_name = models.CharField(max_length=100)
     phone = models.CharField(max_length=100,unique=True)
-    otp = models.CharField(max_length=100, null=True, blank=True)
     
     objects = UserManager()
 
