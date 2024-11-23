@@ -16,18 +16,18 @@ Clone the repository:
 git clone https://github.com/masih1999-12/django-chat-bot.git
 cd django-chat-bot
 ### Create and activate a virtual environment:
-python3 -m venv venv
-source venv/bin/activate
+##### python3 -m venv venv
+##### source venv/bin/activate
 ## Install dependencies:
-pip install -r requirements.txt
+##### pip install -r requirements.txt
 ## Set up the database:
 
-python manage.py migrate
+##### python manage.py migrate
 
 ## Run the development server:
 
-python manage.py runserver
-API Endpoints
+##### python manage.py runserver
+### API Endpoints
 1. Create a Chat Request
 Endpoint: POST /api/chats/
 
