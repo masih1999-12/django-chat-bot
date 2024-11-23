@@ -15,6 +15,8 @@ ollama command-line tool installed and accessible in the environment
 Clone the repository:
 git clone https://github.com/masih1999-12/django-chat-bot.git
 cd django-chat-bot
+### Set Up Environment Variables
+##### You need a .env file to configure sensitive project settings. Use the provided .env_template in the config/ folder as a reference. Rename the .env_template to .env and customize the values.
 ### Create and activate a virtual environment:
 ##### python3 -m venv venv
 ##### source venv/bin/activate
