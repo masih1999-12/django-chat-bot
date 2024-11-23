@@ -1,44 +1,44 @@
-#Chat API Service
-###This project provides a Django-based REST API for generating and storing responses from the llama model using a background ollama subprocess. It includes functionalities for creating chat requests and storing the responses in a database.
+# Chat API Service
+### This project provides a Django-based REST API for generating and storing responses from the llama model using a background ollama subprocess. It includes functionalities for creating chat requests and storing the responses in a database.
 
-##Features
+## Features
 Integrates with llama3.2: Uses the ollama command-line tool to run the llama model for generating text responses.
 REST API: Built using Django REST Framework, allowing easy creation of chat requests and retrieval of responses.
 Database Storage: Stores request and response pairs in a database for future reference.
 Filters and Permissions: Uses DjangoFilterBackend and authentication for secured API access.
-##Requirements
+## Requirements
 Python 3.8+
 Django 4.0+
 Django REST Framework
 ollama command-line tool installed and accessible in the environment
-##Installation
+## Installation
 Clone the repository:
 git clone https://github.com/masih1999-12/django-chat-bot.git
 cd django-chat-bot
-###Create and activate a virtual environment:
+### Create and activate a virtual environment:
 python3 -m venv venv
 source venv/bin/activate
-##Install dependencies:
+## Install dependencies:
 pip install -r requirements.txt
-##Set up the database:
+## Set up the database:
 
 python manage.py migrate
 
-##Run the development server:
+## Run the development server:
 
 python manage.py runserver
 API Endpoints
 1. Create a Chat Request
 Endpoint: POST /api/chats/
 
-###Request Body:
+### Request Body:
 
 json
 Copy code
 {
   "request_text": "Hello, how are you?"
 }
-###Response:
+### Response:
 
 On Success (201 Created):
 json
@@ -53,7 +53,7 @@ Copy code
 {
   "error": "request_text is required"
 }
-###Project Structure
+### Project Structure
 views.py: Contains the ChatApiView for handling API requests.
 model_loader.py: Includes the run_ollama function for running the ollama subprocess.
 models.py: Defines the Chat model for storing request and response text.
